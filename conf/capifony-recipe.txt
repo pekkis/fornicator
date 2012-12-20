@@ -1,0 +1,10 @@
+namespace :fornicator do
+  desc "Fornicates caches"
+  task :fornicate, :roles => :app, :except => { :no_release => true } do
+    capifony_pretty_print "--> Fornicating"
+    run "wget -q 'http://fornicator.axis-of-evil.org?apc&stat'"
+    capifony_puts_ok
+  end
+end
+
+after 'deploy:create_symlink', 'fornicator:fornicate'
