@@ -1,0 +1,33 @@
+{
+    "name": "pekkis/fornicator",
+    "type": "library",
+    "description": "Fornicator",
+    "keywords": ["deployment"],
+    "homepage": "http://github.com/pekkis/fornicator",
+    "license": "BSD",
+    "authors": [
+        {
+            "name": "Mikko Forsström",
+            "email": "pekkisx@gmail.com",
+            "homepage": "http://diktaattoriporssi.com",
+            "role": "Developer"
+        }
+    ],
+
+    "require": {
+        "php": ">=5.3.3",
+        "symfony/console": ">=2.0.0"
+    },
+
+    "require-dev": {
+
+    },
+
+    "autoload": {
+        "psr-0": {
+            "Fornicator\\": "library/",
+            "Fornicator\\Tests": "tests/"
+        }
+    },
+    "minimum-stability": "stable"
+}
