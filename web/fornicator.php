@@ -11,3 +11,8 @@ if (isset($_GET['stat'])) {
     clearstatcache(true);
     echo "cleared realpath cache...";
 }
+
+if (isset($_GET['optimizer'])) {
+    accelerator_reset();
+    echo "cleared optimizer cache...";
+}
