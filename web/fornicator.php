@@ -16,10 +16,9 @@ if (isset($_GET['apc'])) {
     }
 }
 
-
 if (isset($_GET['optimizer'])) {
 
-    if (extension_loaded("ZendOpCache")) {
+    if (extension_loaded("Zend OpCache")) {
         opcache_reset();
         echo "cleared optimizer cache (ZendOpCache)...";
     }
