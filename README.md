@@ -11,7 +11,7 @@ opcaching.
 * APC
 * Zend Optimizer
 * Zend OpCache
-* XCache
+* XCache (ini setting xcache.admin.enable_auth must be set to 0)
 
 How it do it?
 --------------
@@ -22,3 +22,4 @@ Configurations can be found in conf. The method of operations is dead simple.
 * Create fornicator vhost.
 * Call "fornicator.tunk.io" domain. It always goes to localhost.
 * Ta da! All caches are thoroughly molested.
+
