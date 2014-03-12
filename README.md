@@ -4,19 +4,21 @@ PHP Fornicator
 What it do?
 ------------
 
-While you are deploying your software, Fornicator fornicates it.
+While you are deploying your software, Fornicator fornicates all relevant caches in HTTP context as is needed by
+opcaching.
 
-* Clears APC cache
-* Clears realpath and stat caches
-* Clears Zend Optimizer cache
+* Realpath and stat caches
+* APC
+* Zend Optimizer
+* Zend OpCache
+* XCache
 
-How it do?
------------
+How it do it?
+--------------
 
 Configurations can be found in conf. The method of operations is dead simple.
 
-* Tweak configuration for you specific needs if need be.
+* Tweak for you specific needs if need be.
 * Create fornicator vhost.
 * Call "fornicator.tunk.io" domain. It always goes to localhost.
-* Use parameters "apc", "stat" and "optimizer" to define what to clear.
-
+* Ta da! All caches are thoroughly molested.

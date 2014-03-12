@@ -6,6 +6,7 @@ use Fornicator\Adapter\Adapter;
 use Fornicator\Adapter\ApcAdapter;
 use Fornicator\Adapter\OpCacheAdapter;
 use Fornicator\Adapter\RealPathAdapter;
+use Fornicator\Adapter\XcacheAdapter;
 use Fornicator\Adapter\ZendOptimizerPlusAdapter;
 
 class Fornicator
@@ -21,7 +22,9 @@ class Fornicator
             ->addAdapter(new RealPathAdapter())
             ->addAdapter(new ApcAdapter())
             ->addAdapter(new OpCacheAdapter())
-            ->addAdapter(new ZendOptimizerPlusAdapter());
+            ->addAdapter(new ZendOptimizerPlusAdapter())
+            ->addAdapter(new XcacheAdapter())
+            ;
     }
 
     /**
