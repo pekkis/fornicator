@@ -13,10 +13,10 @@ While you are deploying your software, Fornicator fornicates it.
 How it do?
 -----------
 
-Configurations can be found in conf. The method of operations is dead simple. 
+Configurations can be found in conf. The method of operations is dead simple.
 
 * Tweak configuration for you specific needs if need be.
 * Create fornicator vhost.
-* Call "fornicator.axis-of-evil.org" domain. It always goes to localhost.
+* Call "fornicator.tunk.io" domain. It always goes to localhost.
 * Use parameters "apc", "stat" and "optimizer" to define what to clear.
 

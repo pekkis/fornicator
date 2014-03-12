@@ -1,0 +1,28 @@
+{
+    "name": "pekkis/fornicator",
+    "type": "library",
+    "description": "Clears opcode caches",
+    "keywords": ["deployment"],
+    "homepage": "http://github.com/pekkis/fornicator",
+    "license": "BSD",
+    "authors": [
+        {
+            "name": "Mikko Forsström",
+            "email": "pekkisx@gmail.com",
+            "homepage": "http://diktaattoriporssi.com",
+            "role": "Developer"
+        }
+    ],
+
+    "require": {
+        "php": ">=5.3.3"
+    },
+
+    "autoload": {
+        "psr-0": {
+            "Fornicator\\": "library/",
+            "Fornicator\\Tests": "tests/"
+        }
+    },
+    "minimum-stability": "stable"
+}
